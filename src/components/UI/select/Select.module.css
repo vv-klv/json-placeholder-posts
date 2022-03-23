@@ -1,0 +1,11 @@
+.mySelect {
+    height: 30px;
+    min-width: 150px;
+    margin: auto;
+    margin-right: 15px;
+    padding: 0 12px;
+    color: teal;
+    border: 1px solid teal;
+    border-radius: 6px;
+    cursor: pointer;
+}

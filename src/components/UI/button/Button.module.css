@@ -1,0 +1,16 @@
+.Btn {
+    padding: 5px 15px;
+    color: teal;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid teal;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.Btn:active,
+.Btn:hover {
+    transition: 0.2s ease-in-out;
+    background-color: teal;
+    color: white;
+}

@@ -1,0 +1,38 @@
+.postPage {
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+
+.postContent {
+    padding: 15px;
+    border: 2px solid teal;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.postTitle {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.postBody {
+    font-size: 14px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 15px;
+    border: 2px solid teal;
+    border-radius: 10px;
+}
+
+.commentMail {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.commentContent {
+    font-size: 14px;
+}

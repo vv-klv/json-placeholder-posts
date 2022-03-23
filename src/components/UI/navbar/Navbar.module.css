@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 15px 0 0;
+    height: 50px;
+    width: 100%;
+    background-color: teal;
+}
+
+.navbarLinks {
+    text-transform: uppercase;
+    margin-right: auto;
+}
+
+.navbarLink {
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbarLink:hover {
+    text-decoration: underline;
+}

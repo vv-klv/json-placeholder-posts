@@ -1,0 +1,22 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.paginationItem {
+    padding: 5px 15px;
+    color: teal;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid teal;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.paginationItemActive,
+.paginationItem:hover {
+    transition: 0.2s ease-in-out;
+    color: white;
+    background-color: teal;
+}

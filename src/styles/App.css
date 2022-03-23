@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+#body {
+    font-size: 14px;
+}
+
+.App {
+    max-width: 800px;
+    padding: 0 15px;
+}
