@@ -21,7 +21,7 @@ const Navbar = () => {
                     Posts
                 </Link>
             </div>
-            <Button classes='inverse' onClick={logout}>
+            <Button onClick={logout}>
                 Выйти
             </Button>
         </header>

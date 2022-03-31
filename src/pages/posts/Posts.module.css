@@ -2,22 +2,34 @@
     margin-top: 65px;
 }
 
-.postItem {
-    display: flex;
-    max-width: 800px;
-    padding: 15px;
-    border: 2px solid teal;
-    border-radius: 10px;
-    margin-top: 15px;
-    justify-content: space-between;
-    align-items: center;
+.postsWrapper {
+    margin: 14px 0 20px 0;
 }
 
-.postBtns {
+.postsTitle {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.postList {
     display: flex;
-    height: 70px;
-    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.postItem {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: calc(50% - 15px/2);
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%),
+    0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 1px 5px 0 rgb(0 0 0 / 12%);
 }
 
 .postContent {
@@ -29,26 +41,48 @@
     display: block;
     text-transform: uppercase;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .postBody {
     font-size: 14px;
 }
 
+.postBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 15px;
+}
+
 .postItem-enter {
     transform: translateX(-500px);
 }
-
 .postItem-enter-active {
     transform: translateX(0px);
     transition: all 500ms ease-in-out;
 }
-
 .postItem-exit {
     opacity: 1;
 }
-
 .postItem-exit-active {
     transform: translateX(-500px);
     transition: all 500ms ease-in-out;
+}
+
+@media (max-width: 576px) {
+
+    .postList {
+        flex-direction: column;
+    }
+    .postItem {
+
+        width: 100%;
+        flex-direction: row;
+    }
+    .postBtns {
+        flex-direction: column;
+        height: 70px;
+    }
 }

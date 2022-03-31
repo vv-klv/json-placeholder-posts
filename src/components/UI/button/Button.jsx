@@ -2,12 +2,13 @@ import React from 'react';
 import cl from './Button.module.css';
 import clInv from './ButtonInv.module.css';
 
-const Button = ({ children, classes = cl.Btn, ...props }) => {
-    if (classes === 'inverse') {
-        classes = clInv.Btn;
-    }
+const Button = ({ children, btnType, ...props }) => {
+    btnType === 'inverse'
+        ? btnType = clInv.Btn
+        : btnType = cl.Btn;
+
     return (
-        <button {...props} className={classes}>
+        <button {...props} className={btnType}>
             {children}
         </button>
     );

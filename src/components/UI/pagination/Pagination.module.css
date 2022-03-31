@@ -6,17 +6,18 @@
 
 .paginationItem {
     padding: 5px 15px;
-    color: teal;
     font-size: 14px;
     background: transparent;
-    border: 1px solid teal;
     border-radius: 6px;
+    border: 1px solid lightgray;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%),
+    0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 1px 5px 0 rgb(0 0 0 / 12%);
     cursor: pointer;
 }
 
 .paginationItemActive,
 .paginationItem:hover {
     transition: 0.2s ease-in-out;
-    color: white;
-    background-color: teal;
+    background-color: lightgrey;
 }

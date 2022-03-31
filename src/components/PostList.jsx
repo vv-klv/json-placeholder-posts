@@ -9,17 +9,22 @@ const PostList = ({ posts, title, remove }) => {
     }
 
     return (
-        <div style={{ marginBottom: '20px' }}>
-            <h1 style={{ textAlign: 'center' }}>{title}</h1>
-            <TransitionGroup>
-                {posts.map((post, index) => (
-                    <CSSTransition key={post.id} timeout={500}
-                                   classNames={cl.posts}>
-                        <PostItem remove={remove} number={index + 1}
-                                  post={post} />
-                    </CSSTransition>
-                ))}
-            </TransitionGroup>
+        <div className={cl.postsWrapper}>
+            <h1 className={cl.postsTitle}>{title}</h1>
+                <TransitionGroup className={cl.postList}>
+                    {posts.map((post, index) => (
+                        <CSSTransition
+                            key={post.id}
+                            timeout={500}
+                            classNames={cl.posts}
+                        >
+                            <PostItem remove={remove}
+                                      number={index + 1}
+                                      post={post}
+                            />
+                        </CSSTransition>
+                    ))}
+                </TransitionGroup>
         </div>
     );
 };
