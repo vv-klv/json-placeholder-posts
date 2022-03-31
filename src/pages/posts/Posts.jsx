@@ -44,7 +44,9 @@ function Posts() {
     };
 
     const changePage = (page) => {
-        setPage(page);
+        if (sortedAndSearchedPosts.length < 10) {
+            setPage(1);
+        } else setPage(page);
     };
 
     useEffect(() => {
@@ -55,7 +57,7 @@ function Posts() {
         lastElement,
         page < totalPages,
         isPostsLoading,
-        () => setPage(page + 1)
+        () => changePage(page + 1)
     );
 
 
