@@ -28,7 +28,6 @@
                 "functions": "never"
             }
         ],
-        "linebreak-style": ["error", "windows"],
         "operator-linebreak": ["error", "before", { "overrides": { "+": "after" } }]
     }
 }
